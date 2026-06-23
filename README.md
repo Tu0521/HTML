@@ -1,1 +1,253 @@
-# HTML
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四目神-再見</title>
+
+<!--bootstrap插件-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<!--響應式網頁-->
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        /* 手機版 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!--導覽列-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <h2>「四目神-再見」</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#1">首頁</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#2">角色介紹</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#3">故事背景</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#4">玩法介紹</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#5">下載</a>
+            </li>
+            <li class="nav-item dropdown">
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+
+    <section class="hero-section d-flex justify-content-center align-items-center">
+    <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                
+            </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">                    
+        <!-- 
+        body{
+            background:#000;
+            overflow-x:hidden;
+            font-family:"Noto Serif TC", serif;
+        }
+        .hero-section{
+            height:100vh;
+            background:url('images/hero.jpg') center center/cover;
+            position:relative;
+        }
+        .overlay{
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,.55);
+        }
+        .hero-content{
+            position:relative;
+            z-index:2;
+            top:50%;
+            transform:translateY(-50%);
+            color:white;
+        }
+        .section-title{
+            color:#c9302c;
+        }
+        .character-section{
+            background:#111;
+        }
+        .card{
+            transition:.3s;
+        }
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 0 30px rgba(255,0,0,.4);
+        }
+        -->
+        </nav>
+        </section>
+</header>
+
+<!-- 大圖 -->
+<img src="imgen/1000009398.jpg" class="mx-auto d-dlock" style="width: auto;">
+
+<!-- 介紹 -->
+    <section id="story" class="py-5 bg-dark text-white">
+        
+        <class="lead mt-4">
+            <P>"不需要的孩子，會被四目神帶走"</p>            
+            <p></p>
+            <p>長月之時此世上
+            降臨高天原之四目神
+            生於四津村之忌諱之子靈魂
+            若有災難罪孽污穢
+            懇請驅除淨化
+            願神聽我所望</p>
+            <p></p>
+            <p>神秘 × 解謎 × 和風物語</p>
+        
+        <a href="#story" class="btn btn-danger btn-lg mt-4" href="#1" >
+            開始探索
+        </a>
+    </div>
+    </section>
+
+<!-- 故事 -->
+<section id="story" class="py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" >
+                <h2 class="section-title">
+                    故事背景
+                </h2>
+                <p>故事發生在一個神秘的神社，玩家將進入神祕神社，解開封印已久的兩個謎團：「真相」和「過去」。</p>
+                <p>16個結局 1個隱藏</p>
+                <p>包含完整劇情的日式逃脫冒險重製版《四目神 -Reunion-》最終版現 </p>
+            </div>
+
+            <div class="col-lg-6">
+                <img
+                    src="images/story.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 角色介紹 -->
+<section class="py-5 character-section"></section>
+<div class="wrapper">
+    <h2 class="text-center mb-5">
+        角色介紹
+    </h2>
+    <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://www.sej.co.jp/library/contents/products/bromide/ygbromide2202/YTMR0014.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>佐原真依</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.sej.co.jp/library/contents/products/bromide/ygbromide2202/YTMR0015.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>忌子</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.sej.co.jp/library/contents/products/bromide/ygbromide2202/YTMR0016.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>田方</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.sej.co.jp/library/contents/products/bromide/ygbromide2202/YTMR0017.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>小黑</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.sej.co.jp/library/contents/products/bromide/ygbromide2202/YTMR0018.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>小白</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
+<!-- 遊戲畫面 -->
+<section class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center text-white mb-5">
+            遊戲畫面
+        </h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <img src="images/g1.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="images/g2.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="images/g3.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
